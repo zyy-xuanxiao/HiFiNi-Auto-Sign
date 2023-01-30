@@ -25,7 +25,7 @@ func SignIn(client *http.Client) bool {
 	url := "https://www.hifini.com/sg_sign.htm"
 	cookie := os.Getenv("COOKIE")
 	if cookie == "" {
-		fmt.Println("cookie 不存在")
+		fmt.Println("COOKIE不存在，请检查是否添加")
 		return false
 	}
 	//提交请求
